@@ -35,9 +35,9 @@
 
     <!-- content -->
     <div clas="container">
-            <div class ="row justify-content-center">
-                <div class="col-md-8" style="padding:20px;">
-                <center><h1>Formulir</h1></center>
+            <div class ="row justify-content-left">
+                <div class="col-md-6" style="padding:20px;">
+               
 
 
             <div class="card">
@@ -77,15 +77,16 @@
 
              <button type="submit" name="Simpan" class="btn btn-success">Simpan</button>
              <input class = "btn btn-danger" type = "reset" value = "Reset">
-
-
+            
+         
         </div>
       </div>
   </form>
-
+              
             </div>
         </div>
     </div>
+    
     <!-- end content -->
 
     <!-- footer -->
