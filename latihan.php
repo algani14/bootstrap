@@ -34,14 +34,10 @@
                 <div class="card">
                     <div class="card-header">Raport</div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="form2.php" method="post">
                             <div class="form-group">
-                                <label for="">Nama</label>
-                                <input type="text" name="nama" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Kelas</label>
-                                <input type="text" name="kelas" class="form-control" required>
+                                <label for="">Masukan Siswa</label>
+                                <input type="text" name="jml" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-primary btn-block" name="simpan">
@@ -52,44 +48,4 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="padding:20px;">
-                <center><h2><u>Output</u></h2></center>
-                             
-                <div class="table-responsive">
-                    <table class="table">
-                        <tr>
-                            <th>Nama</th>
-                            <th>Kelas</th>
-                        </tr>
-                        <?php
-                    if (isset($_POST['simpan'])) {
-                        $a = $_POST['nama'];
-                        $b = $_POST['kelas'];
-                    }
-                    ?>
-  
-                        <tr>
-                            <th><?php echo $a; ?></th>
-                            <th><?php echo $b; ?></th>
-                        </tr>
-                   
-                    </table>
-                </div>
-            </div
         </div>
-    </div>
-    <!-- End Content -->
-
-    <!-- Footer -->
-    <footer>
-        <center>&copy; 2019 SMK ASSALAAM</center>
-    </footer>
-    <!-- End Footer --> 
-
-    <!-- JS --> 
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <!-- End JS --> 
-</body>
-</html>
