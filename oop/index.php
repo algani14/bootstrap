@@ -9,8 +9,8 @@ class Manusia{
     public $berat = 49.5;
 
 
-    public function lari(){
-        return "berlari dengan kaki";
+    public function lari($al){
+        return "berlari dengan kaki " . $al;
     }
     public function makan(){
         return "makan dengan tangan";
@@ -21,8 +21,9 @@ class Manusia{
     public function minum(){
         return "minum dengan tangan";
     }
-    public function badan (){
-        return "berat badan 49.5";
+    public function badan ($berat){
+        $this-> badan = $berat;
+        return "berat badan = " . $berat;
     }
 }
 $manusia_asli = new Manusia;
@@ -33,10 +34,11 @@ echo '<br>' . 'jumlah tangan = ' .$manusia_asli->tangan;
 echo '<br>' . 'true = ' . $manusia_asli->benar;
 echo '<br>' . 'false = ' . $manusia_asli->salah;
 echo '<br>' . 'berat badan = ' . $manusia_asli->berat;
-echo '<br>' . $manusia_asli->lari();
+echo '<br>' . $manusia_asli->lari('sangat_kencang');
 echo '<br>' . $manusia_asli->makan();
 echo '<br>' . $manusia_asli->kulit();
 echo '<br>' . $manusia_asli->minum();
-echo '<br>' . $manusia_asli->badan();
+echo '<br>' . $manusia_asli->badan("49.5");
+echo '<br>'. "berat = " . $manusia_asli-> berat;
 
 ?>
